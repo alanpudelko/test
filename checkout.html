@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html
+        {
+        background: linear-gradient(90deg, #257436,#0aad48, #c6ffd2);
+        background-size: 400% 400%;
+        animation: AnimationName 8s ease infinite;
+        }
+    
+        @keyframes AnimationName 
+        {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo"></div>
+        <div id="koszyk">
+            <a href="/basket.php"></a>
+        </div>
+    </nav>
+    <form action="">
+        <h3>Zamówienie</h3>
+        <fieldset>
+            <legend>Dane</legend>
+            <div>
+                <label for="nameSurname">Imię i Nazwisko:</label><br>
+                <input type="text" id="nameSurname">
+            </div>
+            <div>
+                <label for="email">Adres e-mail:</label><br>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="telephoneNumber">Numer telefonu:</label><br>
+                <input type="tel" id="telephoneNumber">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Adres</legend>
+            <div>
+                <label for="street">Ulica i numer domu:</label><br>
+                <input type="text" id="street">
+            </div>
+            <div>
+                <label for="city">Miasto:</label><br>
+                <input type="text" id="city">
+            </div>
+            <div>
+                <label for="postalCode">Kod pocztowy:</label><br>
+                <input type="text" id="postalCode">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Zamawiany produkt</legend>
+            <p>Fursuit Wilka 2137 zł</p>
+            <button>ZAMAWIAM</button>
+        </fieldset>
+    </form>
+</body>
+</html>
